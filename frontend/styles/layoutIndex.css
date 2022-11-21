@@ -1,0 +1,7 @@
+.header {
+    background-color: var(--cl-black);
+}
+
+.header_buttons-btns {
+    color: var(--cl-white);
+}

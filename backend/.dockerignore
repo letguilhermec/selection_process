@@ -1,0 +1,5 @@
+node_modules/
+.dockerignore
+src/
+*.env
+tsconfig.json

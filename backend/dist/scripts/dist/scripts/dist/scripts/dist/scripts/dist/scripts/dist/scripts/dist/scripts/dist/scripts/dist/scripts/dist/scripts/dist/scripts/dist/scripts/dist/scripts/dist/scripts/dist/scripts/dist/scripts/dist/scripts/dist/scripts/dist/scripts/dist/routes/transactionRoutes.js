@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const userControler_1 = require("../controllers/userControler");
+const transactionController_1 = require("../controllers/transactionController");
+const router = (0, express_1.Router)();
+router.use(userControler_1.protect);
+router.get('/check', transactionController_1.checkQuery, transactionController_1.viewTransactions);
+router.post('/exchange', transactionController_1.checkAccAndBalance, transactionController_1.performTransaction);
+exports.default = router;
