@@ -27,7 +27,7 @@ cd <pasta de sua preferência>
 3. Construa e rode as imagens / contêineres via Docker
 
 ```bash
-docker compose-up --build -d
+docker-compose up --build -d
 ```
 | A flag '-d' rodará os contêineres em modo 'desanexado', deixando o teminal livre
 
@@ -44,6 +44,10 @@ npm run createDB
 ```bash
 > ng-backend@1.0.0 createDB
 > node ./dist/scripts/createDB.js
+```
+| Para sair do bash
+```bash
+exit
 ```
 
 ### Pronto! O servidor estará disponível na porta 8000 e o website na porta 8000
